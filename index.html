@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hasan Ahmad — Researcher</title>
+  <title>Hasan Ahmad — AI & LLM Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
@@ -22,32 +22,88 @@
 </nav>
 
 <main>
-<div class="hero">
-  <img src="profile.png" alt="Hasan Ahmad" style="
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    margin-bottom: 2rem;
-    display: block;
-  "/>
-  <div class="hero-content">
+
+  <!-- ── HERO ── -->
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:3rem; min-height:calc(100vh - 60px); padding:4rem 2rem; max-width:1100px; margin:0 auto; flex-wrap:wrap;">
+
+    <!-- LEFT: Text -->
+    <div style="flex:1; min-width:300px;">
       <div class="hero-tag">AI &amp; LLM Researcher</div>
-      <h1>Hasan Ahmad<br/><span>Building Smarter LLMs</span></h1>
-      <p>
+
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem); font-weight:700; line-height:1.2; margin-bottom:0.5rem;">
+        Hi, I'm <span style="color:var(--accent);">Hasan Ahmad</span>
+      </h1>
+      <h2 style="font-size:clamp(1.1rem,3vw,1.8rem); font-weight:600; color:var(--muted); margin-bottom:1.2rem;">
+        Building <span style="color:var(--accent2);">Smarter LLMs</span>
+      </h2>
+
+      <p style="color:var(--muted); font-size:1rem; margin-bottom:1.5rem; max-width:480px; line-height:1.8;">
         Researching dynamic memory, adaptive context reliance, and test-time adaptation in large language models.
         Focused on making AI systems that reason better — even at inference time.
       </p>
-      <div class="hero-btns">
-        <a class="btn btn-primary" href="research.html">View My Research</a>
-        <a class="btn btn-outline" href="contact.html">Collaborate with Me</a>
+
+      <!-- Skill tags -->
+      <div style="margin-bottom:2rem;">
+        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">LLMs</span>
+        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">RAG Systems</span>
+        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">Python</span>
+        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">NLP</span>
+        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">Test-Time Adaptation</span>
+      </div>
+
+      <!-- Buttons -->
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+        <a class="btn btn-primary" href="research.html">▶ View My Research</a>
+        <a class="btn btn-outline" href="contact.html">✉ Get In Touch</a>
+      </div>
+
+      <!-- Stats -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; max-width:480px;">
+        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
+          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">30+</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Papers Reviewed</div>
+        </div>
+        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
+          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">6</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Research Themes</div>
+        </div>
+        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
+          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">2</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Papers Written</div>
+        </div>
+        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
+          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">100%</div>
+          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Dedication</div>
+        </div>
       </div>
     </div>
+
+    <!-- RIGHT: Photo -->
+    <div style="flex-shrink:0; text-align:center;">
+      <div style="position:relative; display:inline-block;">
+        <img src="profile.png" alt="Hasan Ahmad" style="
+          width:300px; height:300px;
+          border-radius:50%;
+          object-fit:cover;
+          object-position:top;
+          border:4px solid var(--accent);
+          box-shadow:0 0 60px rgba(79,142,247,0.25);
+          display:block;
+        "/>
+        <div style="
+          position:absolute; bottom:16px; right:-10px;
+          background:var(--bg2); border:1px solid var(--border);
+          border-radius:20px; padding:6px 14px;
+          font-size:0.8rem; color:var(--accent); font-weight:600;
+          box-shadow:0 4px 12px rgba(0,0,0,0.4);
+        ">🔬 AI Researcher</div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Research highlights -->
-  <section style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <!-- ── RESEARCH HIGHLIGHTS ── -->
+  <section style="background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
     <div class="container">
       <div class="section-label">Research Focus</div>
       <h2 class="section-title">What I'm Working On</h2>
@@ -66,13 +122,13 @@
         <div class="card">
           <div style="font-size:1.6rem; margin-bottom:0.8rem;">🔍</div>
           <h3 style="font-size:1rem; font-weight:600; margin-bottom:0.4rem;">Adaptive Context</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Deciding when to trust parametric knowledge vs retrieved context — a key challenge in RAG and beyond.</p>
+          <p style="color:var(--muted); font-size:0.9rem;">Deciding when to trust retrieved context over parametric knowledge — a key challenge in RAG and beyond.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to action -->
+  <!-- ── CALL TO ACTION ── -->
   <section>
     <div class="container" style="text-align:center;">
       <h2 class="section-title">Interested in Collaborating?</h2>
@@ -83,10 +139,11 @@
       <a class="btn btn-primary" href="contact.html">Submit Your CV &amp; Message</a>
     </div>
   </section>
+
 </main>
 
 <footer>
-  <p>© 2025 Hasan Ahmad · Federal Urdu University · Built with HTML, CSS &amp; MongoDB</p>
+  <p>© 2025 Hasan Ahmad · Federal Urdu University · Built with HTML, CSS &amp; Supabase</p>
 </footer>
 
 <script src="main.js"></script>
