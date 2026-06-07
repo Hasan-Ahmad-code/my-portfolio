@@ -23,7 +23,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
   alert.style.display = 'none';
 
   try {
-    const response = await fetch('http://localhost:5000/api/contact', {
+  const response = await fetch('https://my-portfolio-hqwo.onrender.com/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, institution, interest, message, resumeLink })
