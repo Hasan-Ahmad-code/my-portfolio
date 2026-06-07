@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Hasan Ahmad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">Hasan Ahmad</span>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">Get in Touch</div>
+  <h1>Contact &amp; Collaborate</h1>
+  <p style="color:var(--muted); margin-top:0.8rem; max-width:560px;">
+    Interested in my research? Want to collaborate, suggest a paper, or just say hello? Fill out the form below — I read every message.
+  </p>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+
+        <!-- LEFT: Submit form -->
+        <div>
+          <div class="section-label">Submit Your Details</div>
+          <h2 style="font-size:1.4rem; font-weight:600; margin-bottom:1.5rem;">Send a Message + CV</h2>
+
+          <div class="card">
+            <form id="contactForm" novalidate>
+
+              <div class="form-group">
+                <label for="name">Full name *</label>
+                <input type="text" id="name" placeholder="e.g. Ali Hassan" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" placeholder="you@example.com" required/>
+              </div>
+
+              <div class="form-group">
+                <label for="institution">University / Institution</label>
+                <input type="text" id="institution" placeholder="e.g. FUUAST, NUST, IBA..."/>
+              </div>
+
+              <div class="form-group">
+                <label for="interest">Area of interest</label>
+                <select id="interest">
+                  <option value="">— Select one —</option>
+                  <option value="collaboration">Research collaboration</option>
+                  <option value="mentorship">Looking for mentorship</option>
+                  <option value="paper-review">Paper review / feedback</option>
+                  <option value="general">General message</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your message *</label>
+                <textarea id="message" placeholder="Tell me why you're interested, your background, or a question you have..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="resumeLink">Link to your CV / Resume (Google Drive, Dropbox, etc.)</label>
+                <input type="url" id="resumeLink" placeholder="https://drive.google.com/..."/>
+                <div class="form-note">Share a public link to your CV so I can review it easily.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%; justify-content:center;">
+                Send Message
+              </button>
+
+              <div id="formAlert" class="alert" style="display:none;"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info + direct contact -->
+        <div>
+          <div class="section-label">Other Ways to Reach Me</div>
+          <h2 style="font-size:1.4rem; font-weight:600; margin-bottom:1.5rem;">Direct Contact</h2>
+
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h3 style="font-size:0.95rem; font-weight:600; margin-bottom:0.3rem;">📧 Email</h3>
+            <p style="color:var(--muted); font-size:0.9rem;">hasan.ahmad@fuuast.edu.pk</p>
+            <p class="form-note">Replace with your actual email.</p>
+          </div>
+
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h3 style="font-size:0.95rem; font-weight:600; margin-bottom:0.3rem;">🏛 Institution</h3>
+            <p style="color:var(--muted); font-size:0.9rem;">Federal Urdu University of Arts, Science &amp; Technology</p>
+            <p style="color:var(--muted); font-size:0.85rem;">Islamabad, Pakistan</p>
+          </div>
+
+          <div class="card" style="margin-bottom:1.5rem; border-color:rgba(79,142,247,0.3);">
+            <h3 style="font-size:0.95rem; font-weight:600; margin-bottom:0.6rem;">What happens after you submit?</h3>
+            <ul style="color:var(--muted); font-size:0.88rem; list-style:none; padding:0;">
+              <li style="padding:5px 0; border-bottom:1px solid var(--border);">✅ Your message is saved securely to a database</li>
+              <li style="padding:5px 0; border-bottom:1px solid var(--border);">📋 I review all submissions personally</li>
+              <li style="padding:5px 0; border-bottom:1px solid var(--border);">📬 I'll reply within 3–5 working days</li>
+              <li style="padding:5px 0;">🔒 Your data is never shared with third parties</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size:0.95rem; font-weight:600; margin-bottom:0.6rem;">Looking for collaborators who are...</h3>
+            <div>
+              <span class="badge">AI / ML students</span>
+              <span class="badge">NLP researchers</span>
+              <span class="badge">CS undergrads/grads</span>
+              <span class="badge">LLM enthusiasts</span>
+              <span class="badge">Survey co-authors</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Hasan Ahmad · Federal Urdu University</p>
+</footer>
+
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

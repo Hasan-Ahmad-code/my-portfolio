@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research — Hasan Ahmad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">Hasan Ahmad</span>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">Current Research</div>
+  <h1>DMTA-LLMs Survey</h1>
+  <p style="color:var(--muted); margin-top:0.8rem; max-width:600px;">
+    Dynamic Memory and Test-Time Adaptation in Large Language Models — a survey of 30+ papers across 6 themes, formatted in LaTeX (Springer LNCS).
+  </p>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-label">The 6 Research Themes</div>
+      <h2 class="section-title">What the Survey Covers</h2>
+      <p class="section-sub">Each theme explores a different dimension of how LLMs handle memory, context, and adaptation.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(79,142,247,0.15); color:var(--accent); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T1</div>
+            <h3 style="font-size:1rem; font-weight:600;">Dynamic Memory Mechanisms</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">KV-cache management, external memory stores, and how models decide what to retain vs discard across long contexts.</p>
+          <div style="margin-top:1rem;"><span class="badge">KV-Cache</span><span class="badge">Memory Networks</span><span class="badge">Retrieval</span></div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(123,95,245,0.15); color:var(--accent2); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T2</div>
+            <h3 style="font-size:1rem; font-weight:600;">Adaptive Context Reliance</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">When should a model trust retrieved context over its parametric knowledge? This theme studies faithfulness, hallucination, and conflict resolution.</p>
+          <div style="margin-top:1rem;"><span class="badge">RAG</span><span class="badge">Faithfulness</span><span class="badge">Conflict</span></div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(62,207,142,0.12); color:var(--success); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T3</div>
+            <h3 style="font-size:1rem; font-weight:600;">Test-Time Adaptation</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">Techniques to adapt model behavior at inference time using prompts, in-context learning, and lightweight parameter updates — without full fine-tuning.</p>
+          <div style="margin-top:1rem;"><span class="badge">TTA</span><span class="badge">ICL</span><span class="badge">LoRA</span></div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(248,113,113,0.12); color:var(--danger); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T4</div>
+            <h3 style="font-size:1rem; font-weight:600;">Long-Context Reasoning</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">How models handle very long input sequences — positional encoding, attention sink, and the "lost in the middle" problem.</p>
+          <div style="margin-top:1rem;"><span class="badge">Long Context</span><span class="badge">RoPE</span><span class="badge">Attention</span></div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(79,142,247,0.15); color:var(--accent); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T5</div>
+            <h3 style="font-size:1rem; font-weight:600;">Continual & Lifelong Learning</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">How models can learn new information over time without catastrophically forgetting old knowledge — a key open challenge.</p>
+          <div style="margin-top:1rem;"><span class="badge">Catastrophic Forgetting</span><span class="badge">EWC</span><span class="badge">Replay</span></div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1rem;">
+            <div style="background:rgba(123,95,245,0.15); color:var(--accent2); border-radius:8px; padding:8px 12px; font-weight:700; font-size:0.9rem;">T6</div>
+            <h3 style="font-size:1rem; font-weight:600;">Efficient Inference & Compression</h3>
+          </div>
+          <p style="color:var(--muted); font-size:0.9rem;">Quantization, pruning, and speculative decoding as tools to make adaptive LLMs practical — efficiency meets adaptability.</p>
+          <div style="margin-top:1rem;"><span class="badge">Quantization</span><span class="badge">Pruning</span><span class="badge">Speculative Decoding</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:3rem; border-color:rgba(79,142,247,0.3);">
+        <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3 style="font-weight:600; margin-bottom:0.4rem;">Survey paper in progress</h3>
+            <p style="color:var(--muted); font-size:0.9rem;">
+              DMTA-LLMs: Dynamic Memory and Test-Time Adaptation in Large Language Models<br/>
+              Format: LaTeX · Style: Springer LNCS · Status: In progress
+            </p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Request a Draft Copy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Hasan Ahmad · Federal Urdu University</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
