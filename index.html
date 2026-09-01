@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hasan Ahmad — AI & LLM Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,116 +13,77 @@
 <nav>
   <span class="nav-brand">Hasan Ahmad</span>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="research.html">Research</a></li>
-    <li><a href="publications.html">Publications</a></li>
+    <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
 <main>
 
-  <!-- ── HERO ── -->
-  <div style="display:flex; align-items:center; justify-content:space-between; gap:3rem; min-height:calc(100vh - 60px); padding:4rem 2rem; max-width:1100px; margin:0 auto; flex-wrap:wrap;">
+  <!-- ── HERO (abstract-style intro) ── -->
+  <div class="hero-wrap">
+    <div class="hero-grid">
 
-    <!-- LEFT: Text -->
-    <div style="flex:1; min-width:300px;">
-      <div class="hero-tag">AI &amp; LLM Researcher</div>
+      <div>
+        <p class="hero-eyebrow">Federal Urdu University of Arts, Science &amp; Technology</p>
+        <h1>Hasan Ahmad</h1>
+        <p class="role">AI &amp; LLM Researcher</p>
 
-      <h1 style="font-size:clamp(2rem,5vw,3.2rem); font-weight:700; line-height:1.2; margin-bottom:0.5rem;">
-        Hi, I'm <span style="color:var(--accent);">Hasan Ahmad</span>
-      </h1>
-      <h2 style="font-size:clamp(1.1rem,3vw,1.8rem); font-weight:600; color:var(--muted); margin-bottom:1.2rem;">
-        Building <span style="color:var(--accent2);">Smarter LLMs</span>
-      </h2>
+        <p class="abstract-label">Abstract</p>
+        <p class="abstract">
+          I study how large language models manage memory and adapt at inference time — when a model should
+          trust retrieved context over its own parametric knowledge, and how it can adjust its behaviour without
+          retraining. My current work is a survey of dynamic memory and test-time adaptation, alongside applied
+          research in retrieval-augmented systems.
+        </p>
 
-      <p style="color:var(--muted); font-size:1rem; margin-bottom:1.5rem; max-width:480px; line-height:1.8;">
-        Researching dynamic memory, adaptive context reliance, and test-time adaptation in large language models.
-        Focused on making AI systems that reason better — even at inference time.
-      </p>
+        <p class="keywords">
+          <strong>Keywords —</strong> large language models, retrieval-augmented generation, test-time adaptation,
+          dynamic memory, natural language processing
+        </p>
 
-      <!-- Skill tags -->
-      <div style="margin-bottom:2rem;">
-        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">LLMs</span>
-        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">RAG Systems</span>
-        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">Python</span>
-        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">NLP</span>
-        <span class="badge" style="padding:6px 14px; font-size:0.85rem;">Test-Time Adaptation</span>
-      </div>
-
-      <!-- Buttons -->
-      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:2.5rem;">
-        <a class="btn btn-primary" href="research.html">▶ View My Research</a>
-        <a class="btn btn-outline" href="contact.html">✉ Get In Touch</a>
-      </div>
-
-      <!-- Stats -->
-      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; max-width:480px;">
-        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
-          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">30+</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Papers Reviewed</div>
+        <div class="hero-links">
+          <a class="primary" href="research.html">Read my research</a>
+          <a class="secondary" href="projects.html">View projects</a>
+          <a class="secondary" href="contact.html">Get in touch</a>
         </div>
-        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
-          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">6</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Research Themes</div>
-        </div>
-        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
-          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">2</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Papers Written</div>
-        </div>
-        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius); padding:1rem; text-align:center;">
-          <div style="font-size:1.6rem; font-weight:700; color:var(--accent);">100%</div>
-          <div style="font-size:0.7rem; color:var(--muted); margin-top:3px; text-transform:uppercase; letter-spacing:0.05em;">Dedication</div>
+
+        <div class="hero-stats">
+          <div class="stat-item"><div class="num">30+</div><div class="lbl">Papers reviewed</div></div>
+          <div class="stat-item"><div class="num">6</div><div class="lbl">Research themes</div></div>
+          <div class="stat-item"><div class="num">2</div><div class="lbl">Papers in progress</div></div>
+          <div class="stat-item"><div class="num">2</div><div class="lbl">Applied projects</div></div>
         </div>
       </div>
+
+      <div class="hero-figure">
+        <img src="profile.png" alt="Hasan Ahmad"/>
+        <p class="caption">Hasan Ahmad, AI &amp; LLM Researcher</p>
+      </div>
+
     </div>
-
-    <!-- RIGHT: Photo -->
-    <div style="flex-shrink:0; text-align:center;">
-      <div style="position:relative; display:inline-block;">
-        <img src="profile.png" alt="Hasan Ahmad" style="
-          width:280px; height:360px;
-          border-radius:50px;
-          object-fit:cover;
-          object-position:top;
-          border:4px solid var(--accent);
-          box-shadow:0 0 60px rgba(79,142,247,0.25);
-          display:block;
-        "/>
-        <div style="
-          position:absolute; bottom:16px; right:-10px;
-          background:var(--bg2); border:1px solid var(--border);
-          border-radius:20px; padding:6px 14px;
-          font-size:0.8rem; color:var(--accent); font-weight:600;
-          box-shadow:0 4px 12px rgba(0,0,0,0.4);
-        ">🔬 AI Researcher</div>
-      </div>
-    </div>
-
   </div>
 
-  <!-- ── RESEARCH HIGHLIGHTS ── -->
-  <section style="background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <!-- ── RESEARCH FOCUS ── -->
+  <section>
     <div class="container">
-      <div class="section-label">Research Focus</div>
-      <h2 class="section-title">What I'm Working On</h2>
-      <p class="section-sub">My current survey covers 30+ papers across 6 themes in dynamic memory and LLM adaptation.</p>
+      <h2 class="section-title">Research focus</h2>
+      <p class="section-sub">My current survey covers 30+ papers across six themes in dynamic memory and LLM adaptation.</p>
       <div class="grid-3">
         <div class="card">
-          <div style="font-size:1.6rem; margin-bottom:0.8rem;">🧠</div>
-          <h3 style="font-size:1rem; font-weight:600; margin-bottom:0.4rem;">Dynamic Memory</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">How LLMs store and retrieve information within and across contexts, including KV-cache and external memory.</p>
+          <h3 style="font-family:var(--font-display); font-weight:600; margin-bottom:0.5rem; color:var(--ink);">Dynamic memory</h3>
+          <p style="color:var(--muted); font-size:0.92rem;">How LLMs store and retrieve information within and across contexts, including KV-cache and external memory.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.6rem; margin-bottom:0.8rem;">⚡</div>
-          <h3 style="font-size:1rem; font-weight:600; margin-bottom:0.4rem;">Test-Time Adaptation</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Techniques that let models adapt to new distributions at inference time — without retraining.</p>
+          <h3 style="font-family:var(--font-display); font-weight:600; margin-bottom:0.5rem; color:var(--ink);">Test-time adaptation</h3>
+          <p style="color:var(--muted); font-size:0.92rem;">Techniques that let models adapt to new distributions at inference time — without retraining.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.6rem; margin-bottom:0.8rem;">🔍</div>
-          <h3 style="font-size:1rem; font-weight:600; margin-bottom:0.4rem;">Adaptive Context</h3>
-          <p style="color:var(--muted); font-size:0.9rem;">Deciding when to trust retrieved context over parametric knowledge — a key challenge in RAG and beyond.</p>
+          <h3 style="font-family:var(--font-display); font-weight:600; margin-bottom:0.5rem; color:var(--ink);">Adaptive context</h3>
+          <p style="color:var(--muted); font-size:0.92rem;">Deciding when to trust retrieved context over parametric knowledge — a key challenge in RAG and beyond.</p>
         </div>
       </div>
     </div>
@@ -130,13 +91,13 @@
 
   <!-- ── CALL TO ACTION ── -->
   <section>
-    <div class="container" style="text-align:center;">
-      <h2 class="section-title">Interested in Collaborating?</h2>
-      <p class="section-sub" style="margin:0 auto 2rem;">
+    <div class="container" style="text-align:left; max-width:640px;">
+      <h2 class="section-title">Interested in collaborating?</h2>
+      <p class="section-sub">
         I'm looking for research collaborators, fellow students, and mentors.
         Send your CV and a brief message — I read every submission.
       </p>
-      <a class="btn btn-primary" href="contact.html">Submit Your CV &amp; Message</a>
+      <a class="btn btn-primary" href="contact.html">Submit your CV &amp; message</a>
     </div>
   </section>
 
