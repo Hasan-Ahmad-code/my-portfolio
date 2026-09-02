@@ -47,7 +47,7 @@
               fixed thresholds are fragile.
             </p>
             <p style="color:var(--muted); font-size:0.85rem; margin-bottom:0.8rem;">
-              Advanced to the Prescreening Judging Phase of the P@SHA ICT Awards 2026, Tertiary Students category.
+              Finalist, P@SHA ICT Awards 2026, Tertiary Students category.
             </p>
             <div>
               <span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">FAISS</span>
@@ -62,18 +62,83 @@
         <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
           <div style="flex:1; min-width:280px;">
             <h3 style="font-family:var(--font-display); font-weight:600; font-size:1.15rem; margin-bottom:0.4rem; color:var(--ink);">
-              ESG-RAG Pipeline
+              Sustainability Report Extraction Pipeline
             </h3>
             <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">
-              An AI pipeline that extracts, organizes, and evaluates sustainability-related (ESG) information from
-              long corporate reports, combining retrieval-augmented generation, prompt engineering, structured
-              reasoning, and explainability techniques.
+              A RAG pipeline with page-aware PDF ingestion, overlapping chunking, and FAISS dense retrieval
+              (all-MiniLM-L6-v2 embeddings, cosine similarity) to index long, unstructured corporate ESG reports.
+              Uses a taxonomy-guided extraction schema with few-shot chain-of-thought prompting to constrain LLM
+              outputs to structured, validated JSON. An explainability layer produces per-claim source citations
+              and retrieval-confidence scores to mitigate hallucination risk, with rate-limit-aware retry logic
+              and a Streamlit inference demo.
             </p>
             <div>
-              <span class="tag">RAG</span><span class="tag">Prompt engineering</span><span class="tag">Explainability</span><span class="tag">OpenRouter API</span>
+              <span class="tag">RAG</span><span class="tag">Prompt Engineering</span><span class="tag">Explainability</span>
+              <span class="tag">Sentence-Transformers</span><span class="tag">OpenRouter API</span><span class="tag">Streamlit</span>
             </div>
           </div>
           <a class="btn btn-outline" href="https://github.com/Hasan-Ahmad-code/esg-rag-pipeline" target="_blank" style="white-space:nowrap;">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:1.6rem;">
+        <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
+          <div style="flex:1; min-width:280px;">
+            <h3 style="font-family:var(--font-display); font-weight:600; font-size:1.15rem; margin-bottom:0.4rem; color:var(--ink);">
+              AI-Based Exam Paper Generator using RAG
+            </h3>
+            <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">
+              A RAG pipeline that converts a PDF into a formatted exam paper with an answer key, using
+              inference-time generation via Groq's LLaMA-3.1-8b-instant and FAISS dense retrieval
+              (all-MiniLM-L6-v2). A multi-type question generator produces MCQs, True/False, short answer,
+              fill-in-the-blank, and descriptive questions across three Bloom's Taxonomy difficulty levels, with
+              output validation and marks enforcement. Benchmarked against a TF-IDF lexical baseline using
+              ROUGE-L and Flesch-Kincaid readability metrics — RAG-generated questions were more analytical and
+              less directly extractive of source text.
+            </p>
+            <div>
+              <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">Groq LLaMA-3.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:1.6rem;">
+        <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
+          <div style="flex:1; min-width:280px;">
+            <h3 style="font-family:var(--font-display); font-weight:600; font-size:1.15rem; margin-bottom:0.4rem; color:var(--ink);">
+              Cheating Detection in Exam Halls
+            </h3>
+            <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">
+              A vision-based deep learning system for real-time cheating detection in exam halls, using a
+              CNN-LSTM architecture — ResNet-18 for spatial feature extraction and LSTM for temporal behavior
+              modeling. Curated a self-collected dataset of 7,200 frames across 11 behavior categories from
+              multiple camera angles, achieving 89.92% validation accuracy, 97.48% recall, and a 90.62% F1 score
+              at the optimal checkpoint.
+            </p>
+            <div>
+              <span class="tag">PyTorch</span><span class="tag">ResNet-18</span><span class="tag">LSTM</span><span class="tag">OpenCV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:1.6rem; opacity:0.85;">
+        <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
+          <div style="flex:1; min-width:280px;">
+            <h3 style="font-family:var(--font-display); font-weight:600; font-size:1.15rem; margin-bottom:0.4rem; color:var(--ink);">
+              Smart Home Monitoring System <span class="ref-status">2022</span>
+            </h3>
+            <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">
+              An Arduino Uno system programmed in C++ for real-time environmental monitoring, with
+              threshold-based automation triggering alerts and appliance control from live sensor readings, plus
+              a solar-tracking module built with LDR sensors and a servo motor. 3rd place, Robotics Exhibition
+              2022, Punjab Group of Colleges.
+            </p>
+            <div>
+              <span class="tag">Arduino Uno</span><span class="tag">C++</span><span class="tag">IoT Sensors</span>
+            </div>
+          </div>
         </div>
       </div>
 
